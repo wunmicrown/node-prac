@@ -12,3 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   return res.status(200).json({ message: 'Hello!' });
 });
+
+app.post('/send-names', (req, res) => {
+      const names = req.body.names || [];})
