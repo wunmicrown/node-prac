@@ -15,3 +15,4 @@ app.get('/', (req, res) => {
 
 app.post('/send-names', (req, res) => {
       const names = req.body.names || [];})
+      console.log("Received names:", names);
