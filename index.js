@@ -11,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   return res.status(200).json({ message: 'Hello!' });
+
+    return res.status(200).json({ message: 'Names received successfully', names });
+
 });
 
 app.post('/send-names', (req, res) => {
